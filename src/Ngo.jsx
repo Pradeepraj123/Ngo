@@ -3,7 +3,7 @@ import {
   Menu, X, Heart, GraduationCap, Utensils, Stethoscope, Leaf, Users,
   Building2, Handshake, Share2, Phone, Mail, MapPin,
   Star, ChevronLeft, ChevronRight, ArrowRight,
-  FileText, MessageCircle, Sunrise, ShieldCheck,
+  FileText, Sunrise, ShieldCheck,
   Plus, Minus, Calendar, Sparkles, Clock, BookOpen, Droplets, Award,
   Flame, Lock, AlertTriangle, Quote, User,
 } from "lucide-react";
@@ -489,7 +489,7 @@ export default function UnitedIndiaFoundationLanding() {
       {/* ---------------- NAVBAR ---------------- */}
       <header className="fixed top-0 left-0 right-0 z-50 bg-white/90 backdrop-blur-md border-b border-sky-100 shadow-sm">
         <div className="w-full mx-auto px-[clamp(1.25rem,0.9rem+2vw,2.5rem)] flex items-center justify-between h-24 md:h-28">
-          <button onClick={() => scrollTo("home")} className="flex items-center gap-1">
+          <button onClick={() => scrollTo("home")} className="flex items-center gap-1 pl-4 md:pl-6">
             <img src="/uif-icon-transparent.png" alt="United India Foundation logo" className="w-20 h-20 md:w-24 md:h-24 object-contain shrink-0" />
             <span className="font-display font-bold text-lg md:text-xl text-slate-900">United India Foundation</span>
           </button>
@@ -1249,16 +1249,6 @@ export default function UnitedIndiaFoundationLanding() {
           </div>
         </div>
       </footer>
-
-      {/* ---------------- FLOATING WHATSAPP ---------------- */}
-      <a
-        href="#"
-        onClick={(e) => e.preventDefault()}
-        className="fixed bottom-6 right-6 z-40 w-14 h-14 rounded-full bg-sky-500 hover:bg-sky-600 shadow-xl flex items-center justify-center text-white transition-transform hover:scale-110"
-        aria-label="Chat on WhatsApp"
-      >
-        <MessageCircle className="w-6 h-6" />
-      </a>
 
       {/* ---------------- STICKY MOBILE DONATE BAR ---------------- */}
       {showStickyDonate && (
